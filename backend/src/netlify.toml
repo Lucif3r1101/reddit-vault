@@ -1,13 +1,10 @@
-
 [build]
+  base = "backend"
   command = "npm install"
   functions = "."
-
-[dev]
-  command = "npm run dev"
-  port = 5000
+  publish = "."
 
 [[redirects]]
-  from = "/api/*"
-  to = "/:splat"
+  from = "/*"
+  to = "/server.js"
   status = 200
