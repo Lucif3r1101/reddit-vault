@@ -1,12 +1,11 @@
 {
   "name": "reddit-vault-backend",
   "version": "1.0.0",
-  "description": "RedditVault Backend - Node.js Reddit Scraper",
+  "description": "RedditVault Backend - Netlify Functions",
   "private": true,
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "netlify dev",
+    "build": "echo 'Building...'"
   },
   "dependencies": {
     "express": "^4.18.2",
